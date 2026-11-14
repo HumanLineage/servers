@@ -1,7 +1,7 @@
 id: datacircle-mcp
 name: Datacircle MCP Server
 category: data-analysis
-description: Find the best GTM APIs. Open to anyone, with no key: list_apis and search_plans.
+description: "Find the best GTM APIs. Open to anyone, with no key: list_apis and search_plans."
 long_description: |
   Find the best GTM APIs. Our MCP server is open to anyone, with no key: add api.datacircle.dev/mcp to Claude, ChatGPT or Cursor. It answers from the sheet. list_apis lists the GTM APIs on it, and search_plans finds their plans by API, provider or price.
 maintainer:
