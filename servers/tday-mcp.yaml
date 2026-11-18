@@ -1,0 +1,62 @@
+id: tday-mcp
+name: tday.com
+category: development
+description: Your coding agent records narrated demo videos of the app you are building.
+long_description: |
+  tday lets your coding agent record the demo video of the feature it just built.
+  Paste one prompt into Claude Code, Cursor or Codex: the agent starts a second copy
+  of your app on your machine, with throwaway data, and records it one narrated line
+  at a time. It works for web apps, Electron apps, terminal tools, iPhone apps in the
+  iOS Simulator and Android apps on the emulator. tday voices every line, adds the
+  cursor, camera, captions, music and your brand, and renders a demo you can edit and
+  embed in your docs. Free plan: 5 saved demos.
+
+  This hosted server (Streamable HTTP) carries tday's account tools: brands, credits,
+  product screens and launch videos. The local recording tools ship in the npm
+  package @tday-com/mcp (npx -y @tday-com/mcp@latest install).
+
+maintainer:
+  name: tday
+  github: tday-com
+  website: tday.com
+
+authentication:
+  type: oauth2
+  provider: custom
+  instructions: |
+    1. Add https://tday.com/api/mcp to your MCP client as a remote (Streamable HTTP) server.
+    2. The client registers itself (OAuth 2.1 dynamic client registration) and opens a browser window.
+    3. Sign in or create a free account at tday.com and approve access.
+    Docs: https://docs.tday.com/coding-agents
+
+endpoints:
+  production: https://tday.com/api/mcp
+
+capabilities:
+  - id: brands
+    name: Brands
+    description: List, read and create the brands your demos and videos use
+  - id: launch-videos
+    name: Launch Videos
+    description: Make, revise and download launch videos for a feature
+  - id: product-screens
+    name: Product Screens
+    description: Read the product screens and features tday knows about
+  - id: credits
+    name: Credits and Usage
+    description: Check your plan, credit balance and usage
+
+tags:
+  - video
+  - demo
+  - documentation
+  - developer-tools
+  - coding-agents
+  - remote
+
+verification:
+  status: pending
+  tested_date: "2026-11-17T00:00:00Z"
+  security_audit: false
+
+featured: false
